@@ -24,6 +24,6 @@ before_script:
 #  - brew install v8 # just to test we are using autobrew bottles
 
 script:
-  - echo "Building commit range $TRAVIS_COMMIT_RANGE"  
+  - echo "Building commit range $TRAVIS_COMMIT_RANGE"
   - brew test-bot --local --skip-setup --skip-homebrew
-  - brew test-bot --ci-upload --dry-run
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then ./upload_bottles.sh; fi'
