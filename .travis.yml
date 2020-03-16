@@ -1,6 +1,10 @@
 os: osx
-osx_image: xcode8
 language: c
+
+matrix:
+  include:
+    - osx_image: xcode8
+    - osx_image: xcode10.1
 
 env:
   global:
@@ -15,6 +19,7 @@ before_install:
   - hash -r
 
 before_script:
+  - git config --global protocol.version 1
   - echo | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/autobrew/install/master/install)"
   - HOMEBREW_TAP_DIR="$(brew --repo "$TRAVIS_REPO_SLUG")"
   - mkdir -p "$HOMEBREW_TAP_DIR"
