@@ -8,7 +8,7 @@ class Libpq < Formula
   bottle do
     cellar :any
     root_url "https://autobrew.github.io/bottles"
-    sha256 "927edb9fd16c728159e0e85338a14f6970558e7854c41d78f1e1726a503ee723" => :el_capitan_or_later
+    sha256 "927edb9fd16c728159e0e85338a14f6970558e7854c41d78f1e1726a503ee723" => :el_capitan
   end
 
   keg_only "conflicts with postgres formula"

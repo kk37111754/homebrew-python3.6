@@ -8,7 +8,7 @@ class Tesseract < Formula
   bottle do
     cellar :any
     root_url "https://autobrew.github.io/bottles"
-    sha256 "4efc3b406ca11f3698c48b6cd6208b2d0b517db0e465f88142fd84000fb0b7c8" => :el_capitan_or_later
+    sha256 "4efc3b406ca11f3698c48b6cd6208b2d0b517db0e465f88142fd84000fb0b7c8" => :el_capitan
   end
 
   option "with-all-languages", "Install recognition data for all languages"

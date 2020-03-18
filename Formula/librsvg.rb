@@ -8,7 +8,7 @@ class Librsvg < Formula
     cellar :any
     root_url "https://autobrew.github.io/bottles"
     rebuild 1
-    sha256 "4215e484368a2ec74d7e67ec54b7370e42f4a16c1914d1d691d1ddffa7d27aee" => :el_capitan_or_later
+    sha256 "4215e484368a2ec74d7e67ec54b7370e42f4a16c1914d1d691d1ddffa7d27aee" => :el_capitan
   end
 
   depends_on "pkg-config" => :build

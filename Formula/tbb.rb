@@ -8,7 +8,7 @@ class Tbb < Formula
   bottle do
     cellar :any_skip_relocation
     root_url "https://autobrew.github.io/bottles"
-    sha256 "379dfa611ead7093563b922ac34f3c08c1d9eb3530954993dcdd18b67df7a481" => :el_capitan_or_later
+    sha256 "379dfa611ead7093563b922ac34f3c08c1d9eb3530954993dcdd18b67df7a481" => :el_capitan
   end
 
   depends_on "cmake" => :build

@@ -14,7 +14,7 @@ class MariadbConnectorC < Formula
   bottle do
     cellar :any
     root_url "https://autobrew.github.io/bottles"
-    sha256 "9fdd9109ae52e7d8fd77957c56b1c497037837c03dba06506cc96f38d0ddf38a" => :el_capitan_or_later
+    sha256 "9fdd9109ae52e7d8fd77957c56b1c497037837c03dba06506cc96f38d0ddf38a" => :el_capitan
   end
 
   depends_on "cmake" => :build

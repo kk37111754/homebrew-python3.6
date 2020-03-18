@@ -9,7 +9,7 @@ class Gpgme < Formula
     cellar :any
     rebuild 1
     root_url "https://autobrew.github.io/bottles"
-    sha256 "74b6fbc400e6b513cd42cfe8ab2379097dea11dadeb22b814d940c49e9ee06df" => :el_capitan_or_later
+    sha256 "74b6fbc400e6b513cd42cfe8ab2379097dea11dadeb22b814d940c49e9ee06df" => :el_capitan
   end
 
   depends_on "swig" => :build

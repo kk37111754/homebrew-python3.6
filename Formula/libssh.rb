@@ -8,7 +8,7 @@ class Libssh < Formula
   bottle do
     cellar :any
     root_url "https://autobrew.github.io/bottles"
-    sha256 "c9429b81061da732ba093ee64ad7ff8d98f3b49bb6cc14a26b654970a0391d36" => :el_capitan_or_later
+    sha256 "c9429b81061da732ba093ee64ad7ff8d98f3b49bb6cc14a26b654970a0391d36" => :el_capitan
   end
 
   depends_on "cmake" => :build

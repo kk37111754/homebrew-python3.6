@@ -13,7 +13,7 @@ class X264 < Formula
   bottle do
     cellar :any
     root_url "https://autobrew.github.io/bottles"
-    sha256 "b848b6282558496b4ca4f39c8358f6f600cca2bb09da3e1af326d058b3fe989d" => :el_capitan_or_later
+    sha256 "b848b6282558496b4ca4f39c8358f6f600cca2bb09da3e1af326d058b3fe989d" => :el_capitan
   end
 
   depends_on "nasm" => :build
