@@ -42,7 +42,6 @@ class BoostAT160 < Formula
     sha256 "1a470c3a2738af409f68e3301eaecd8d07f27a8965824baf8aee0adef463b844"
   end
 
-  needs :cxx11 if build.cxx11?
 
   def install
     # Force boost to compile with the desired compiler

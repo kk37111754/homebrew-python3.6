@@ -28,7 +28,6 @@ class Caffe < Formula
     sha256 "472d4a06035497b180636d8a82667129960371375bd10fcb6df5c6c7631f25e0"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

@@ -14,7 +14,6 @@ class Rethinkdb < Formula
   end
 
   depends_on "boost" => :build
-  depends_on :macos => :lion
   depends_on "openssl"
 
   fails_with :gcc do

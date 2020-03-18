@@ -19,7 +19,6 @@ class Newsboat < Formula
   depends_on "json-c"
   depends_on "libstfl"
 
-  needs :cxx11
 
   def install
     ENV["XML_CATALOG_FILES"] = etc/"xml/catalog"

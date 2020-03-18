@@ -15,7 +15,6 @@ class BoostMpi < Formula
   depends_on "boost"
   depends_on "open-mpi"
 
-  needs :cxx11
 
   def install
     # "layout" should be synchronized with boost

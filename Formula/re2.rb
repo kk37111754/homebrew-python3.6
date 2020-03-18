@@ -14,7 +14,6 @@ class Re2 < Formula
     sha256 "17b8953c7264c0ba05e5791dac7d92559f02ac0784a2a19bf09a3ad945cd1466" => :el_capitan
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

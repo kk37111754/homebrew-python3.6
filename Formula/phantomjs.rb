@@ -16,7 +16,6 @@ class Phantomjs < Formula
   end
 
   depends_on :xcode => :build
-  depends_on :macos => :lion
   depends_on "openssl"
 
   # Fixes build.py for non-standard Homebrew prefixes.  Applied

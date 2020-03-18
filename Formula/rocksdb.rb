@@ -16,7 +16,6 @@ class Rocksdb < Formula
   depends_on "lz4"
   depends_on "snappy"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

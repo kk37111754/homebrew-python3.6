@@ -20,7 +20,6 @@ class MongodbAT30 < Formula
 
   depends_on "go" => :build
   depends_on "scons" => :build
-  depends_on :macos => :mountain_lion
   depends_on "boost" => :optional
   depends_on "openssl" => :optional
 
@@ -30,7 +29,6 @@ class MongodbAT30 < Formula
       :revision => "86d15daf966ce58f5ce01985db07a7a5a3641ecb"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11 if MacOS.version < :mavericks

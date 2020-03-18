@@ -13,7 +13,6 @@ class Libsigcxx < Formula
     sha256 "3441b2001c4e0aa51dae34d36a95db87a580229a6e68ae45f668b3d572a8f9cc" => :yosemite
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

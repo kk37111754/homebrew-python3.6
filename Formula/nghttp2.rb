@@ -45,7 +45,6 @@ class Nghttp2 < Formula
   # https://github.com/tatsuhiro-t/nghttp2/issues/125
   # Upstream requested the issue closed and for users to use gcc instead.
   # Given this will actually build with Clang with cxx11, just use that.
-  needs :cxx11
 
   def install
     ENV.cxx11

@@ -37,7 +37,6 @@ class Ncmpcpp < Formula
   depends_on "readline"
   depends_on "taglib"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

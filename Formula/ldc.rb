@@ -33,7 +33,6 @@ class Ldc < Formula
   depends_on "libconfig" => :build
   depends_on "llvm"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

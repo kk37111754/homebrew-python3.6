@@ -39,7 +39,6 @@ class Efl < Formula
   depends_on "glib" => :optional
   depends_on "webp" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

@@ -35,7 +35,6 @@ class Siril < Formula
 
   fails_with :clang # no OpenMP support
 
-  needs :cxx11
 
   def install
     ENV.cxx11

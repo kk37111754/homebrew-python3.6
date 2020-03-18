@@ -17,7 +17,6 @@ class Glbinding < Formula
 
   depends_on "cmake" => :build
   depends_on "glfw" => :optional
-  needs :cxx11
 
   def install
     ENV.cxx11

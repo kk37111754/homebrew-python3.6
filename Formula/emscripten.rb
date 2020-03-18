@@ -43,7 +43,6 @@ class Emscripten < Formula
   depends_on "yuicompressor"
   depends_on "closure-compiler" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

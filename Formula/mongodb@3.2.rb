@@ -20,7 +20,6 @@ class MongodbAT32 < Formula
 
   depends_on "go" => :build
   depends_on "scons" => :build
-  depends_on :macos => :mountain_lion
   depends_on "openssl" => :recommended
   depends_on "boost" => :optional
 
@@ -31,7 +30,6 @@ class MongodbAT32 < Formula
         :shallow => false
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11 if MacOS.version < :mavericks

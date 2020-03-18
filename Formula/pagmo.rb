@@ -17,7 +17,6 @@ class Pagmo < Formula
   depends_on "eigen"
   depends_on "nlopt"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

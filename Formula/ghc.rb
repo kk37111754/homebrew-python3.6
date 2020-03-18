@@ -30,7 +30,6 @@ class Ghc < Formula
 
   depends_on "python" => :build if build.bottle?
   depends_on "sphinx-doc" => :build
-  depends_on :macos => :lion
 
   resource "gmp" do
     url "https://ftp.gnu.org/gnu/gmp/gmp-6.1.2.tar.xz"

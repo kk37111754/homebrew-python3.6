@@ -27,7 +27,6 @@ class Ponyc < Formula
   depends_on :macos => :yosemite
   depends_on "pcre2"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

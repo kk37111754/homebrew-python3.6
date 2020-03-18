@@ -17,7 +17,6 @@ class Libglademm < Formula
   depends_on "gtkmm"
   depends_on "libglade"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

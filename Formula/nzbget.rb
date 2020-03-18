@@ -29,7 +29,6 @@ class Nzbget < Formula
     EOS
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

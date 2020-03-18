@@ -55,7 +55,6 @@ class Tesseract < Formula
     sha256 "36f772980ff17c66a767f584a0d80bf2302a1afa585c01a226c1863afcea1392"
   end
 
-  needs :cxx11
 
   def install
     if build.with? "training-tools"

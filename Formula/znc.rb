@@ -31,7 +31,6 @@ class Znc < Formula
   depends_on "icu4c" => :optional
   depends_on "python" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

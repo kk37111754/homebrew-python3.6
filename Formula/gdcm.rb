@@ -25,7 +25,6 @@ class Gdcm < Formula
   depends_on "python" => :optional
   depends_on "swig" => :build if build.with?("python") || build.with?("python@2")
 
-  needs :cxx11
 
   def install
     ENV.cxx11

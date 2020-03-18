@@ -16,7 +16,6 @@ class GoAT18 < Formula
   option "without-cgo", "Build without cgo (also disables race detector)"
   option "without-race", "Build without race detector"
 
-  depends_on :macos => :mountain_lion
 
   resource "gotools" do
     url "https://go.googlesource.com/tools.git",

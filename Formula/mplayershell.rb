@@ -17,7 +17,6 @@ class Mplayershell < Formula
   end
 
   depends_on :xcode => :build
-  depends_on :macos => :lion
   depends_on "mplayer"
 
   def install

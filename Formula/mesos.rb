@@ -15,7 +15,6 @@ class Mesos < Formula
   depends_on "maven" => :build
   depends_on "apr-util"
   depends_on :java => "1.8"
-  depends_on :macos => :mountain_lion
   depends_on "python@2"
   depends_on "subversion"
 
@@ -67,7 +66,6 @@ class Mesos < Formula
     sha256 "47959d0651c32102c10ad919b8a0ffe0ae85f44b8457ddcf2bdc0358fb03dc29"
   end
 
-  needs :cxx11
 
   def install
     # Disable optimizing as libc++ does not play well with optimized clang

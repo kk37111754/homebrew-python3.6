@@ -15,7 +15,6 @@ class ThorsSerializer < Formula
 
   depends_on "libyaml"
 
-  needs :cxx14
 
   def install
     ENV["COV"] = "gcov"

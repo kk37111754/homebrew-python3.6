@@ -24,7 +24,6 @@ class DosboxX < Formula
   conflicts_with "dosbox", :because => "both install `dosbox` binaries"
 
   # Otherwise build failure on Moutain Lion (#311)
-  needs :cxx11
 
   def install
     ENV.cxx11

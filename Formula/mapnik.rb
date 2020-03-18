@@ -27,7 +27,6 @@ class Mapnik < Formula
   depends_on "gdal" => :optional
   depends_on "postgresql" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

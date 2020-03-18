@@ -26,7 +26,6 @@ class StoneSoup < Formula
     depends_on "freetype"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

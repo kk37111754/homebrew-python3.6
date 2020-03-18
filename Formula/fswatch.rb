@@ -12,7 +12,6 @@ class Fswatch < Formula
     sha256 "8338851b10412b958318c6582654ff092ca04af3dff83c5abaa14284c4b4f8de" => :el_capitan
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

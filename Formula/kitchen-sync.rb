@@ -22,7 +22,6 @@ class KitchenSync < Formula
   depends_on "mysql-client" => :recommended
   depends_on "postgresql" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

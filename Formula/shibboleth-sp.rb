@@ -26,7 +26,6 @@ class ShibbolethSp < Formula
   depends_on "xml-security-c"
   depends_on "xml-tooling-c"
 
-  needs :cxx11
 
   def install
     ENV.O2 # Os breaks the build

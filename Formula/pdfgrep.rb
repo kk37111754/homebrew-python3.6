@@ -24,7 +24,6 @@ class Pdfgrep < Formula
   depends_on "poppler"
   depends_on "pcre" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

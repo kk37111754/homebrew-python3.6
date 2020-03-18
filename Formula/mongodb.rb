@@ -17,7 +17,6 @@ class Mongodb < Formula
   depends_on "pkg-config" => :build
   depends_on "scons" => :build
   depends_on :xcode => ["8.3.2", :build]
-  depends_on :macos => :mountain_lion
   depends_on "python@2"
   depends_on "openssl" => :recommended
   depends_on "boost" => :optional
@@ -37,7 +36,6 @@ class Mongodb < Formula
     sha256 "d400a9344254803a2368533e4533a4200d21eb7b6b729c173bc38201a74db3f2"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11 if MacOS.version < :mavericks

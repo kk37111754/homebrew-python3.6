@@ -27,7 +27,6 @@ class Ledger < Formula
   depends_on "python@2" => :recommended
   depends_on "boost-python" if build.with? "python@2"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

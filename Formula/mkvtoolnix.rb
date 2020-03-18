@@ -37,7 +37,6 @@ class Mkvtoolnix < Formula
   depends_on "qt" => :optional
   depends_on "cmark" if build.with? "qt"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

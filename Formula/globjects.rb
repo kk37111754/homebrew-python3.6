@@ -19,7 +19,6 @@ class Globjects < Formula
   depends_on "glbinding"
   depends_on "glm"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

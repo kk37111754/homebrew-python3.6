@@ -16,7 +16,6 @@ class Ompl < Formula
   depends_on "eigen"
   depends_on "ode" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

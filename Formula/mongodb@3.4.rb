@@ -19,11 +19,9 @@ class MongodbAT34 < Formula
   depends_on "go" => :build
   depends_on "pkg-config" => :build
   depends_on "scons" => :build
-  depends_on :macos => :mountain_lion
   depends_on "openssl" => :recommended
   depends_on "boost" => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11 if MacOS.version < :mavericks

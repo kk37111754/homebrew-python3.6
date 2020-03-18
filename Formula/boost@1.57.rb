@@ -26,7 +26,6 @@ class BoostAT157 < Formula
     depends_on "icu4c" => :optional
   end
 
-  needs :cxx11 if build.cxx11?
 
   def install
     # Force boost to compile with the desired compiler

@@ -35,7 +35,6 @@ class NordugridArc < Formula
     sha256 "5561ea013ddd03ee4f72437f2e01f22b2c0cac2806bf837402724be281ac2b6d"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

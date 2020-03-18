@@ -18,7 +18,6 @@ class Encfs < Formula
   depends_on "openssl"
   depends_on :osxfuse
 
-  needs :cxx11
 
   def install
     ENV.cxx11

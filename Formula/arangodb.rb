@@ -22,7 +22,6 @@ class Arangodb < Formula
     cause "Fails with compile errors"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

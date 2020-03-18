@@ -31,7 +31,6 @@ class Gobby < Formula
   # and all traces of ige-mac-integration have been removed from the code
   patch :DATA
 
-  needs :cxx11
 
   def install
     ENV.cxx11

@@ -27,7 +27,6 @@ class Mosh < Formula
   depends_on "tmux" => :build if build.with?("test") || build.bottle?
   depends_on "protobuf"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

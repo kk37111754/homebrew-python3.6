@@ -21,7 +21,6 @@ class Mpv < Formula
   depends_on "ffmpeg"
   depends_on "libass"
   depends_on "lua@5.1"
-  depends_on :macos => :mountain_lion
 
   depends_on "jpeg" => :recommended
   depends_on "little-cms2" => :recommended

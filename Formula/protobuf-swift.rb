@@ -21,7 +21,6 @@ class ProtobufSwift < Formula
   conflicts_with "swift-protobuf",
     :because => "both install `protoc-gen-swift` binaries"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

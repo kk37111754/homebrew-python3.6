@@ -20,7 +20,6 @@ class Dlib < Formula
   depends_on "openblas" => :optional
   depends_on :x11 => :optional
 
-  needs :cxx11
 
   def install
     ENV.cxx11

@@ -27,7 +27,6 @@ class Pdf2htmlex < Formula
   depends_on "libpng" # for fontforge
   depends_on "libtiff" # for fontforge
   depends_on "libtool" # for fontforge
-  depends_on :macos => :lion
   depends_on "openjpeg" # for poppler
   depends_on "pango" # for fontforge
   depends_on "ttfautohint"

@@ -18,7 +18,6 @@ class Caf < Formula
 
   depends_on "cmake" => :build
 
-  needs :cxx11
 
   def install
     args = %W[--prefix=#{prefix} --no-examples --build-static]

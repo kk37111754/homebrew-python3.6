@@ -29,7 +29,6 @@ class Vtk < Formula
   depends_on "qt" => :optional
   depends_on "pyqt" if build.with? "qt"
 
-  needs :cxx11
 
   def install
     args = std_cmake_args + %W[

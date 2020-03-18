@@ -17,7 +17,6 @@ class VowpalWabbit < Formula
   depends_on "libtool" => :build
   depends_on "boost"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

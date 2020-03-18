@@ -21,7 +21,6 @@ class Opencv < Formula
   depends_on "python" => :build
   depends_on "tbb"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

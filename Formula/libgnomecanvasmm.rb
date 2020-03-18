@@ -17,7 +17,6 @@ class Libgnomecanvasmm < Formula
   depends_on "gtkmm"
   depends_on "libgnomecanvas"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

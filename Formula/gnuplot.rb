@@ -40,7 +40,6 @@ class Gnuplot < Formula
   depends_on "pango" if build.with?("cairo") || build.with?("wxmac")
   depends_on :x11 => :optional
 
-  needs :cxx11 if build.with? "qt"
 
   resource "libcerf" do
     url "http://apps.jcns.fz-juelich.de/src/libcerf/libcerf-1.5.tgz"

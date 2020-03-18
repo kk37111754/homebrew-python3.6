@@ -3,6 +3,7 @@ class Widelands < Formula
   homepage "https://wl.widelands.org/"
   url "https://launchpad.net/widelands/build19/build19/+download/widelands-build19-src.tar.bz2"
   sha256 "e511f9d26828a2b71b64cdfc6674e6e847543b2da73961ab882acca36c7c01a6"
+  version '19'
   revision 11
 
   bottle do
@@ -26,7 +27,6 @@ class Widelands < Formula
   depends_on "sdl2_net"
   depends_on "sdl2_ttf"
 
-  needs :cxx11
 
   def install
     # icu4c 61.1 compatability

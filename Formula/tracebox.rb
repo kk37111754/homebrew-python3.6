@@ -20,7 +20,6 @@ class Tracebox < Formula
   depends_on "json-c"
   depends_on "lua"
 
-  needs :cxx11
 
   def install
     ENV.libcxx

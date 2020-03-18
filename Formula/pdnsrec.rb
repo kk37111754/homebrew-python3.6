@@ -22,7 +22,6 @@ class Pdnsrec < Formula
     cause "incomplete C++11 support"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

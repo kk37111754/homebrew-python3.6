@@ -16,7 +16,6 @@ class YamlCpp < Formula
 
   depends_on "cmake" => :build
 
-  needs :cxx11
 
   def install
     args = std_cmake_args

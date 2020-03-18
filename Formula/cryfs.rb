@@ -18,7 +18,6 @@ class Cryfs < Formula
   depends_on "openssl"
   depends_on :osxfuse
 
-  needs :cxx11
 
   def install
     system "cmake", ".", "-DBUILD_TESTING=off", *std_cmake_args

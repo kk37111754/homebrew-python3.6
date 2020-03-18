@@ -19,10 +19,8 @@ class Povray < Formula
   depends_on "jpeg"
   depends_on "libpng"
   depends_on "libtiff"
-  depends_on :macos => :lion
   depends_on "openexr"
 
-  needs :cxx11
 
   def install
     ENV.cxx11

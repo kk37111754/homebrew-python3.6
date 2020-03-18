@@ -4,6 +4,7 @@ class Stockfish < Formula
   url "https://stockfish.s3.amazonaws.com/stockfish-9-src.zip"
   sha256 "ba2e72d6973479c8c839c7f4a095d121829ebe8df39b71ebf291c84e5cb3e36e"
   head "https://github.com/official-stockfish/Stockfish.git"
+  version '9'
 
   bottle do
     cellar :any_skip_relocation

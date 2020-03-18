@@ -9,7 +9,7 @@ class Valgrind < Formula
 
     # valgrind does not yet support High Sierra
     # https://bugs.kde.org/show_bug.cgi?id=383811
-    depends_on MaximumMacOSRequirement => :sierra
+    # depends_on MaximumMacOSRequirement => :sierra
 
     # Fix build on 10.12 with Xcode 9
     # Upstream commit from 24 Sep 2017 "Support all Apple clang/LLVM 5.1+"
@@ -45,11 +45,6 @@ class Valgrind < Formula
       --disable-dependency-tracking
       --prefix=#{prefix}
     ]
-    if MacOS.prefer_64_bit?
-      args << "--enable-only64bit" << "--build=amd64-darwin"
-    else
-      args << "--enable-only32bit"
-    end
 
     system "./autogen.sh" if build.head?
 

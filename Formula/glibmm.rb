@@ -25,7 +25,6 @@ class Glibmm < Formula
     sha256 "ae8990b93e29b47903da7eed8676cf806b34fd3b45d6bd5fb3d7a4f040b9f4c9"
   end
 
-  needs :cxx11
 
   def install
     ENV.cxx11

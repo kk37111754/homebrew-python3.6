@@ -27,7 +27,6 @@ class Openclonk < Formula
   # Requires some C++14 features missing in Mavericks
   depends_on :macos => :yosemite
 
-  needs :cxx11
 
   def install
     ENV.cxx11

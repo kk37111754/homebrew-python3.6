@@ -14,7 +14,6 @@ class Jsonnet < Formula
 
   depends_on :macos => :mavericks
 
-  needs :cxx11
 
   def install
     ENV.cxx11
