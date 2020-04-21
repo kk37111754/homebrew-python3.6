@@ -13,9 +13,9 @@ env:
     - MACOS=1
 
 before_install:
-  - curl -fsSOL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh
-  - sudo /bin/bash uninstall.sh --force
-  - rm uninstall.sh
+  - curl -fsSOL https://raw.githubusercontent.com/Homebrew/install/6f9b04355b11f6849fed761725a1f10cb326e979/uninstall
+  - sudo ruby uninstall --force
+  - rm uninstall
   - hash -r
 
 before_script:

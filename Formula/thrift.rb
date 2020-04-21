@@ -31,7 +31,7 @@ class Thrift < Formula
   deprecated_option "with-python" => "with-python@2"
 
   depends_on "bison" => :build
-  depends_on "boost"
+  depends_on "boost" => :build
   depends_on "openssl"
   depends_on "libevent" => :optional
   depends_on "python@2" => :optional
