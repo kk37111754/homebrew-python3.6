@@ -20,7 +20,7 @@ class Cairo < Formula
 
   ## Jeroen: we need the cairo-gobject interface for librsvg, but not for cairo itself
   ## When updating this bottle, uncomment this line:
-  depends_on "glib"
+  #depends_on "glib"
 
   depends_on "pkg-config" => :build
   depends_on "fontconfig"
