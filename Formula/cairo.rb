@@ -5,10 +5,10 @@ class Cairo < Formula
   sha256 "5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331"
 
   bottle do
-    rebuild 2
+    rebuild 3
     cellar :any_skip_relocation
     root_url "https://autobrew.github.io/bottles"
-    sha256 "6ae6d08a357c4b32672a5b228555e50509cc6404bd0a530f2a5d5ba8493d5d6a" => :el_capitan
+    sha256 "3347d0a15554233bcf06aef5bca24d8d1a5d4b7868a2e8688d29b6e05ae466f1" => :el_capitan
   end
 
   head do
@@ -19,6 +19,7 @@ class Cairo < Formula
   end
 
   depends_on "pkg-config" => :build
+  depends_on "glib" => :build
   depends_on "fontconfig"
   depends_on "freetype"
   depends_on "libpng"
@@ -32,7 +33,7 @@ class Cairo < Formula
 
     system "./configure", "--disable-dependency-tracking",
                           "--prefix=#{prefix}",
-                          "--enable-gobject=no",
+                          "--enable-gobject=yes",
                           "--enable-fc=yes",
                           "--enable-svg=yes",
                           "--enable-tee=yes",
