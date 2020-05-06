@@ -5,10 +5,10 @@ class Cairo < Formula
   sha256 "5e7b29b3f113ef870d1e3ecf8adf21f923396401604bda16d44be45e66052331"
 
   bottle do
-    rebuild 3
+    rebuild 4
     cellar :any_skip_relocation
     root_url "https://autobrew.github.io/bottles"
-    sha256 "3347d0a15554233bcf06aef5bca24d8d1a5d4b7868a2e8688d29b6e05ae466f1" => :el_capitan
+    sha256 "064b80dc96cb032b8a83deb7260a9f553176dbc63bd0824ae6aceeae624bf92e" => :el_capitan
   end
 
   head do
@@ -18,8 +18,11 @@ class Cairo < Formula
     depends_on "libtool" => :build
   end
 
+  ## Jeroen: we need the cairo-gobject interface for librsvg, but not for cairo itself
+  ## When updating this bottle, uncomment this line:
+  depends_on "glib"
+
   depends_on "pkg-config" => :build
-  depends_on "glib" => :build
   depends_on "fontconfig"
   depends_on "freetype"
   depends_on "libpng"
@@ -43,6 +46,7 @@ class Cairo < Formula
                           "--enable-xcb=no",
                           "--enable-xlib=no",
                           "--enable-xlib-xrender=no"
+    inreplace "src/cairo.pc", "gobject-2.0 glib-2.0 >= 2.14", ""
     system "make", "install"
   end
 
