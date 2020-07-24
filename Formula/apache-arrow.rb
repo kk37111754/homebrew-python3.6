@@ -1,14 +1,14 @@
 class ApacheArrow < Formula
   desc "Columnar in-memory analytics layer designed to accelerate big data"
   homepage "https://arrow.apache.org/"
-  url "https://downloads.apache.org/arrow/arrow-0.17.1/apache-arrow-0.17.1.tar.gz"
-  # Uncomment and update to test on a release candidate
-  # url "https://dist.apache.org/repos/dist/dev/arrow/apache-arrow-0.17.1-rc1/apache-arrow-0.17.1.tar.gz"
-  sha256 "cbc51c343bca08b10f7f1b2ef15cb15057c30e5e9017cfcee18337b7e2da9ea2"
+  url "https://downloads.apache.org/arrow/arrow-1.0.0/apache-arrow-1.0.0.tar.gz"
+  # Uncomment and update to test on a release candidate 
+  # url "https://dist.apache.org/repos/dist/dev/arrow/apache-arrow-1.0.0-rc1/apache-arrow-1.0.0.tar.gz"
+  sha256 "86ddb9feb48203a5aaf9cc4f2827525e20a2ca4d7239e492af17e74532ccf243"
 
   bottle do
     cellar :any
-    sha256 "e31e367003c68535202852069626a9868de5338820e8b48fda3ad42058185add" => :el_capitan
+    sha256 "069071b28cbb0fb03306fda0e102e7973b7a7ecd87042bb5d636b83fa4b5309c" => :el_capitan
     root_url "https://autobrew.github.io/bottles"
   end
 
@@ -29,15 +29,17 @@ class ApacheArrow < Formula
       -DARROW_JSON=ON
       -DARROW_PARQUET=ON
       -DARROW_BUILD_SHARED=OFF
-      -DARROW_JEMALLOC=OFF
+      -DARROW_JEMALLOC=ON
       -DARROW_USE_GLOG=OFF
       -DARROW_PYTHON=OFF
       -DARROW_S3=OFF
       -DARROW_WITH_LZ4=ON
+      -DARROW_WITH_SNAPPY=ON
+      -DARROW_WITH_UTF8PROC=OFF
       -DARROW_WITH_ZLIB=ON
       -DARROW_WITH_ZSTD=OFF
-      -DARROW_WITH_SNAPPY=ON
       -DARROW_BUILD_UTILITIES=ON
+      -DCMAKE_UNITY_BUILD=ON
       -DPARQUET_BUILD_EXECUTABLES=ON
       -DLZ4_HOME=#{Formula["lz4"].prefix}
       -DTHRIFT_HOME=#{Formula["thrift"].prefix}
@@ -59,7 +61,7 @@ class ApacheArrow < Formula
         return 0;
       }
     EOS
-    system ENV.cxx, "test.cpp", "-std=c++11", "-I#{include}", "-L#{lib}", "-larrow", "-o", "test"
+    system ENV.cxx, "test.cpp", "-std=c++11", "-I#{include}", "-L#{lib}", "-larrow", "-larrow_bundled_dependencies", "-o", "test"
     system "./test"
   end
 end
