@@ -1,35 +1,24 @@
 class Cmake < Formula
   desc "Cross-platform make"
   homepage "https://www.cmake.org/"
-  url "https://cmake.org/files/v3.12/cmake-3.12.2.tar.gz"
-  sha256 "0f97485799e51a7070cc11494f3e02349b0fc3a24cc12b082e737bf67a0581a4"
-  head "https://cmake.org/cmake.git"
+  url "https://github.com/Kitware/CMake/releases/download/v3.18.1/cmake-3.18.1.tar.gz"
+  sha256 "c0e3338bd37e67155b9d1e9526fec326b5c541f74857771b7ffed0c46ad62508"
+  head "https://gitlab.kitware.com/cmake/cmake.git"
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "467775398419045ade07ae6f406fcc41299094f1c2d94eeda1b192eda2cb7e90" => :mojave
-    sha256 "852ff3e17fd4b18dad1b321043a2e89020bed0e8b1cabcaf1ca93f454c38e182" => :high_sierra
-    sha256 "10dd90b3aedb656af4ef26f53ff62a6f3b34391fc4774f5704959f643535cb09" => :sierra
-    sha256 "14ad6305d2b795cabe082779eea3875591ddb3b3c881a6056f9c792243fe7135" => :el_capitan
+    sha256 "38522cf8d87c44416649c349835e76583bdaa0c23bd68ce1ab4cc4df73f36658" => :high_sierra
+    sha256 "0338c8f714ebc943520bd2bdc96e88c9c9786018853c4a8649d90413c9ce3280" => :el_capitan
+    root_url "https://autobrew.github.io/bottles"
   end
 
-  option "without-docs", "Don't build man pages"
-  option "with-completion", "Install Bash completion (Has potential problems with system bash)"
-
-  depends_on "sphinx-doc" => :build if build.with? "docs"
+  # The completions were removed because of problems with system bash
 
   # The `with-qt` GUI option was removed due to circular dependencies if
   # CMake is built with Qt support and Qt is built with MySQL support as MySQL uses CMake.
   # For the GUI application please instead use `brew cask install cmake`.
 
-
   def install
-    ENV.cxx11 if MacOS.version < :mavericks
-
-    # Avoid the following compiler error:
-    # SecKeychain.h:102:46: error: shift expression '(1853123693 << 8)' overflows
-    ENV.append_to_cflags "-fpermissive" if MacOS.version <= :lion
-
     args = %W[
       --prefix=#{prefix}
       --no-system-libs
@@ -42,24 +31,10 @@ class Cmake < Formula
       --system-curl
     ]
 
-    if build.with? "docs"
-      # There is an existing issue around macOS & Python locale setting
-      # See https://bugs.python.org/issue18378#msg215215 for explanation
-      ENV["LC_ALL"] = "en_US.UTF-8"
-      args << "--sphinx-man" << "--sphinx-build=#{Formula["sphinx-doc"].opt_bin}/sphinx-build"
-    end
-
-    system "./bootstrap", *args, "--", "-DCMAKE_BUILD_TYPE=Release"
+    system "./bootstrap", *args, "--", *std_cmake_args,
+                                       "-DCMake_INSTALL_EMACS_DIR=#{elisp}"
     system "make"
     system "make", "install"
-
-    if build.with? "completion"
-      cd "Auxiliary/bash-completion/" do
-        bash_completion.install "ctest", "cmake", "cpack"
-      end
-    end
-
-    elisp.install "Auxiliary/cmake-mode.el"
   end
 
   test do
