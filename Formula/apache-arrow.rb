@@ -14,6 +14,7 @@ class ApacheArrow < Formula
 
   depends_on "boost" => :build
   depends_on "cmake" => :build
+  depends_on "aws-sdk-cpp"
   depends_on "lz4"
   depends_on "thrift"
   depends_on "snappy"
@@ -29,17 +30,17 @@ class ApacheArrow < Formula
       -DARROW_JSON=ON
       -DARROW_PARQUET=ON
       -DARROW_BUILD_SHARED=OFF
-      -DARROW_JEMALLOC=ON
+      -DARROW_JEMALLOC=OFF
       -DARROW_USE_GLOG=OFF
       -DARROW_PYTHON=OFF
-      -DARROW_S3=OFF
+      -DARROW_S3=ON
       -DARROW_WITH_LZ4=ON
       -DARROW_WITH_SNAPPY=ON
       -DARROW_WITH_UTF8PROC=OFF
       -DARROW_WITH_ZLIB=ON
       -DARROW_WITH_ZSTD=OFF
       -DARROW_BUILD_UTILITIES=ON
-      -DCMAKE_UNITY_BUILD=ON
+      -DCMAKE_UNITY_BUILD=OFF
       -DPARQUET_BUILD_EXECUTABLES=ON
       -DLZ4_HOME=#{Formula["lz4"].prefix}
       -DTHRIFT_HOME=#{Formula["thrift"].prefix}
@@ -61,7 +62,7 @@ class ApacheArrow < Formula
         return 0;
       }
     EOS
-    system ENV.cxx, "test.cpp", "-std=c++11", "-I#{include}", "-L#{lib}", "-larrow", "-larrow_bundled_dependencies", "-o", "test"
+    system ENV.cxx, "test.cpp", "-std=c++11", "-I#{include}", "-L#{lib}", "-larrow", "-o", "test"
     system "./test"
   end
 end
