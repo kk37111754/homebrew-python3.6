@@ -6,10 +6,10 @@ class AwsSdkCpp < Formula
   head "https://github.com/aws/aws-sdk-cpp.git"
 
   bottle do
-    rebuild 1
+    rebuild 2
     cellar :any_skip_relocation
-    sha256 "d54370c22f5492da270249aa84cbff84dcc25e8c739acb2ac83e69c66436c487" => :high_sierra
-    sha256 "37eb362a6190e867daf1b8c9768c9cfbb9d6288675a12cf1142b62f49ffec8c5" => :el_capitan
+    sha256 "4afb5bca9ce71df16332752f5a2bfb11fe3c768c81c9227f90ac6f3d24c16e78" => :high_sierra
+    sha256 "38c52cda2393f11f349d43ef65d93200fb6f141e66b7c2aecab44e74a85129f5" => :el_capitan
     root_url "https://autobrew.github.io/bottles"
   end
 
@@ -17,7 +17,7 @@ class AwsSdkCpp < Formula
 
   def install
     mkdir "build" do
-      system "cmake", "..", "-DBUILD_SHARED_LIBS=OFF", "-DBUILD_ONLY=config;s3;transfer", "-DENABLE_UNITY_BUILD=ON",  *std_cmake_args
+      system "cmake", "..", "-DBUILD_SHARED_LIBS=OFF", "-DBUILD_ONLY=config;s3;transfer;identity-management;sts", "-DENABLE_UNITY_BUILD=ON",  *std_cmake_args
       system "make"
       system "make", "install"
     end
