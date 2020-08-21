@@ -1,14 +1,19 @@
 class ApacheArrow < Formula
   desc "Columnar in-memory analytics layer designed to accelerate big data"
   homepage "https://arrow.apache.org/"
-  url "https://downloads.apache.org/arrow/arrow-1.0.0/apache-arrow-1.0.0.tar.gz"
+  url "https://downloads.apache.org/arrow/arrow-1.0.1/apache-arrow-1.0.1.tar.gz"
   # Uncomment and update to test on a release candidate 
-  # url "https://dist.apache.org/repos/dist/dev/arrow/apache-arrow-1.0.0-rc1/apache-arrow-1.0.0.tar.gz"
-  sha256 "86ddb9feb48203a5aaf9cc4f2827525e20a2ca4d7239e492af17e74532ccf243"
+  # url "https://dist.apache.org/repos/dist/dev/arrow/apache-arrow-1.0.1-rc0/apache-arrow-1.0.1.tar.gz"
+  sha256 "149ca6aa969ac5742f3b30d1f69a6931a533fd1db8b96712e60bf386a26dc75c"
 
+  patch do
+    url "https://github.com/apache/arrow/commit/ae60bad1c2e28bd67cdaeaa05f35096ae193e43a.patch"
+  end
+  
   bottle do
     cellar :any
-    sha256 "069071b28cbb0fb03306fda0e102e7973b7a7ecd87042bb5d636b83fa4b5309c" => :el_capitan
+    sha256 "7e1600cc98244a80b3567da2eed8a36922fb2faea6ef4e6b9bc74ee40d720bab" => :high_sierra
+    sha256 "c0703750b7d3d21d6156db590caecdf0a899674db57abb88ac3eff6e10d265de" => :el_capitan
     root_url "https://autobrew.github.io/bottles"
   end
 
@@ -39,7 +44,7 @@ class ApacheArrow < Formula
       -DARROW_WITH_ZLIB=ON
       -DARROW_WITH_ZSTD=OFF
       -DARROW_BUILD_UTILITIES=ON
-      -DCMAKE_UNITY_BUILD=ON
+      -DCMAKE_UNITY_BUILD=OFF
       -DPARQUET_BUILD_EXECUTABLES=ON
       -DLZ4_HOME=#{Formula["lz4"].prefix}
       -DTHRIFT_HOME=#{Formula["thrift"].prefix}
