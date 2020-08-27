@@ -97,6 +97,7 @@ class V8 < Formula
       :clang_use_chrome_plugins     => false, # disable the usage of Google's custom clang plugins
       :use_custom_libcxx            => false, # uses system libc++ instead of Google's custom one
       :treat_warnings_as_errors     => false,
+      :v8_monolith                  => true,
     }
 
     # overwrite Chromium minimum sdk version of 10.15
