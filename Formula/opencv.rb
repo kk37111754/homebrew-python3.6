@@ -1,8 +1,8 @@
 class Opencv < Formula
   desc "Open source computer vision library"
   homepage "https://opencv.org/"
-  url "https://github.com/opencv/opencv/archive/3.4.5.tar.gz"
-  sha256 "0c57d9dd6d30cbffe68a09b03f4bebe773ee44dc8ff5cd6eaeb7f4d5ef3b428e"
+  url "https://github.com/opencv/opencv/archive/4.4.0.tar.gz"
+  sha256 "bb95acd849e458be7f7024d17968568d1ccd2f0681d47fd60d34ffb4b8c52563"
 
   bottle do
     cellar :any_skip_relocation
@@ -21,10 +21,17 @@ class Opencv < Formula
   depends_on "python" => :build
   depends_on "tbb"
 
+  resource "contrib" do
+    url "https://github.com/opencv/opencv_contrib/archive/4.4.0.tar.gz"
+    sha256 "a69772f553b32427e09ffbfd0c8d5e5e47f7dab8b3ffc02851ffd7f912b76840"
+  end
 
   def install
     ENV.cxx11
-    ENV.prepend_path "PATH", Formula["python"].opt_libexec/"bin"
+    resource("contrib").stage buildpath/"opencv_contrib"
+
+    # Avoid Accelerate.framework
+    ENV["OpenBLAS_HOME"] = Formula["openblas"].opt_prefix
     ENV.delete("PYTHONPATH")
 
     args = std_cmake_args + %W[
@@ -44,6 +51,8 @@ class Opencv < Formula
       -DBUILD_opencv_java=OFF
       -DBUILD_opencv_text=OFF
       -DOPENCV_ENABLE_NONFREE=ON
+      -DOPENCV_EXTRA_MODULES_PATH=#{buildpath}/opencv_contrib/modules
+      -DOPENCV_GENERATE_PKGCONFIG=ON
       -DWITH_ITT=OFF
       -DWITH_XINE=OFF
       -DWITH_1394=OFF
@@ -59,6 +68,9 @@ class Opencv < Formula
       -DWITH_TBB=ON
       -DWITH_VTK=OFF
       -DWITH_PROTOBUF=OFF
+      -DWITH_QUIRC=OFF
+      -DWITH_ADE=OFF
+      -DWITH_IPP=OFF
       -DBUILD_opencv_python2=OFF
       -DBUILD_opencv_python3=OFF
     ]
@@ -70,6 +82,7 @@ class Opencv < Formula
 
     mkdir "build" do
       system "cmake", "..", "-DBUILD_SHARED_LIBS=OFF", *args
+      inreplace "modules/core/version_string.inc", "#{HOMEBREW_SHIMS_PATH}/mac/super/", ""
       system "make"
       system "make", "install"
     end
@@ -77,14 +90,15 @@ class Opencv < Formula
 
   test do
     (testpath/"test.cpp").write <<~EOS
-      #include <opencv/cv.h>
+      #include <opencv2/opencv.hpp>
       #include <iostream>
       int main() {
         std::cout << CV_VERSION << std::endl;
         return 0;
       }
     EOS
-    system ENV.cxx, "test.cpp", "-I#{include}", "-L#{lib}", "-o", "test"
+    system ENV.cxx, "-std=c++11", "test.cpp", "-I#{include}/opencv4",
+                    "-o", "test"
     assert_equal `./test`.strip, version.to_s
   end
 end
