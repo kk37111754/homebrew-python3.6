@@ -7,8 +7,8 @@ class Opencv < Formula
   bottle do
     cellar :any_skip_relocation
     root_url "https://autobrew.github.io/bottles"
-    sha256 "d0b2cc3827d93acb8623aaffc0d892329caf6ecd354daa328d5c657dd83b5d6a" => :el_capitan
-    sha256 "06caa7636ee22caaf325d756883dfb94668439ec3da49d02df673eac7d73204a" => :high_sierra
+    sha256 "cac4e5994d8c853ffeb88f607dbf2883710032bd5df151b8e7b4dfa204d6b280" => :el_capitan
+    sha256 "96ddcfd78fbfb2bd9f781d964fb9271911e25f2a8118383d39e6c530da66f443" => :high_sierra
   end
 
   depends_on "cmake" => :build
@@ -85,6 +85,10 @@ class Opencv < Formula
       inreplace "modules/core/version_string.inc", "#{HOMEBREW_SHIMS_PATH}/mac/super/", ""
       system "make"
       system "make", "install"
+
+      # Jeroen: fix static linking flags
+      inreplace "#{lib}/pkgconfig/opencv4.pc", "-lAccelerate.framework", "-framework Accelerate -framework AVFoundation"
+      inreplace "#{lib}/pkgconfig/opencv4.pc", "-llibz.dylib", "-lz"
     end
   end
 
