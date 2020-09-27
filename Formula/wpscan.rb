@@ -7,7 +7,7 @@ class Wpscan < Formula
 
   bottle do
     rebuild 1
-    sha256 "dabc92a0af95e91c9257803ef547b1d2ce6cf59f950893b34106fb73098ce32e" => :mojave
+#    sha256 "dabc92a0af95e91c9257803ef547b1d2ce6cf59f950893b34106fb73098ce32e" => :mojave
     sha256 "474e42470e4b10fde9c416f985120273acb909a17fea63c76a291c448f0153b4" => :high_sierra
     sha256 "85ef3d390772979703100fb42db28c944860728075f6ff49bacb917d95754097" => :sierra
     sha256 "6170bf76495f5826c18dc2d8ffd61bf3ca0064617f58701e63e806abf10106c2" => :el_capitan

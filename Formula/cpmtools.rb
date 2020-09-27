@@ -6,7 +6,7 @@ class Cpmtools < Formula
   revision 1
 
   bottle do
-    sha256 "2a7281836c39574fe905ee34110756703298b774984d6796663c55d04dee7ea2" => :mojave
+#    sha256 "2a7281836c39574fe905ee34110756703298b774984d6796663c55d04dee7ea2" => :mojave
     sha256 "c4d8d3aa660ecea66f519582bd216b37e2f23b0c6714e70ad297c913fb297fe9" => :high_sierra
     sha256 "996f6ec337721c7d57a6c5b033ed4653b6a1f5f4998304c85e2a809c7e1cf0f0" => :sierra
     sha256 "e3fdab874e376cacefccd916de4c96bfaada75d1cc5af6f53e6bf9a625d3aa72" => :el_capitan

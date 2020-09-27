@@ -6,7 +6,7 @@ class Gdb < Formula
   sha256 "c3a441a29c7c89720b734e5a9c6289c0a06be7e0c76ef538f7bbcef389347c39"
 
   bottle do
-    sha256 "66aba1de069c94a7dbd24da8f29bba8a2415ba04ca55fc7e57fa33fa482885c4" => :mojave
+#    sha256 "66aba1de069c94a7dbd24da8f29bba8a2415ba04ca55fc7e57fa33fa482885c4" => :mojave
     sha256 "6d35586ed4c646df660b4518838f7809c593a851ad171b86d5d44b6d30c780b4" => :high_sierra
     sha256 "bbf55e88a59cc9ccedd9771a8cab1c57a5395bbbb91ece45daa1214a2b36f5b9" => :sierra
     sha256 "cd3d64855ad850a25bdf7cb031ae837138579afbd2faebb5ec806dd3d22ca960" => :el_capitan

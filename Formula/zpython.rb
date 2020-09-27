@@ -27,7 +27,7 @@ class Zpython < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d7416844f4492de9a7301415e7cbaeadd12174a12adbdbc95d79cd078713636a" => :mojave
+#    sha256 "d7416844f4492de9a7301415e7cbaeadd12174a12adbdbc95d79cd078713636a" => :mojave
     sha256 "383da8000738fdc3384760da9387755a39cab9a3949b728236b494e0c7b5edd4" => :high_sierra
     sha256 "10c9bc1a96a21649687772eb3a1da85155e7d61918c6ba14bca3e838f86c716c" => :sierra
     sha256 "6763da884b7a5bc7e8fa01e5888fa07be6fa7a1ecb1d271e6045c8445e91c8db" => :el_capitan

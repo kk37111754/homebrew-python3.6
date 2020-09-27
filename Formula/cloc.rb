@@ -7,7 +7,7 @@ class Cloc < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d6cdda5baedc22ce655e3710c0941bada186684ead1c60501de2d78e5007681e" => :mojave
+#    sha256 "d6cdda5baedc22ce655e3710c0941bada186684ead1c60501de2d78e5007681e" => :mojave
     sha256 "d1b6fc4ce381936384a97e9481c19f77133bdf7b310dde360d8a548f43c9ad7e" => :high_sierra
     sha256 "ec9ac848b778b9c55ab25f56b4ba12227cfceabdebd424b50e411861f5f54544" => :sierra
     sha256 "dc92ea3a174ca3e27a5e3def7a579a3a87d7e682701c0859306e10d6a250a7b3" => :el_capitan

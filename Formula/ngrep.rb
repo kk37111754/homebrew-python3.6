@@ -7,7 +7,7 @@ class Ngrep < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "0d1948b2fbf7c60fb6e46f15d32a51a3f7754e7372924e4e984cce98282ca281" => :mojave
+#    sha256 "0d1948b2fbf7c60fb6e46f15d32a51a3f7754e7372924e4e984cce98282ca281" => :mojave
     sha256 "390424274552105e21b3f3e926b933322a09333cee02274d2f84a5e23f4ea74d" => :high_sierra
     sha256 "0e915d1e3b7e7da8e58a48457de4e40359cb0f870eb45a77302d36c1b767d044" => :sierra
     sha256 "d057c167d3b695ff915c13fd39e3cd7b3e6e2a5b3f82bce6bb8ea4c030e8f6e7" => :el_capitan

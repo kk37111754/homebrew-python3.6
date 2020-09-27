@@ -9,7 +9,7 @@ class FbClient < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "57a826c072389e851488aa7926270a6ad3c5202bd9d3a878bcaebdd4df8d186c" => :mojave
+#    sha256 "57a826c072389e851488aa7926270a6ad3c5202bd9d3a878bcaebdd4df8d186c" => :mojave
     sha256 "0ccd2fc01043e8f066d492105435ecf2230776d32873c1c2e389211efe5e4bc7" => :high_sierra
     sha256 "af9c5a5aab957f2e99cf1a7b86dd0b108408a61c4b7d8438f0c1e28840118b4d" => :sierra
     sha256 "f14ed5ba4447ed1161209080646351f3e4dcdf4d2872142d28d81b3a7fbcee4c" => :el_capitan

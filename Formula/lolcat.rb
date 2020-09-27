@@ -7,7 +7,7 @@ class Lolcat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f1f5edec2745ef0eff4ab1b40d654af7de06d3999aceef66670babfc66dea62d" => :mojave
+#    sha256 "f1f5edec2745ef0eff4ab1b40d654af7de06d3999aceef66670babfc66dea62d" => :mojave
     sha256 "d240127af1150e214e42b97f1f2c5de9f69cc1e6227ade0afa4bb199136a5d09" => :high_sierra
     sha256 "425023804e93bf8d8d5493cae02fae225c6092b659297d7d7f2186a0f7de90fc" => :sierra
     sha256 "0651fd564ed9ced11b35475a9b3fdbbf850e95b312684c8297800ba7f56d4e6f" => :el_capitan

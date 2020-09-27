@@ -7,7 +7,7 @@ class Fmsx < Formula
 
   bottle do
     cellar :any
-    sha256 "366914aa768a34c0e10507c618ffa73cc3116823a91f30b8d56c94f1efb0ce0e" => :mojave
+#    sha256 "366914aa768a34c0e10507c618ffa73cc3116823a91f30b8d56c94f1efb0ce0e" => :mojave
     sha256 "888f28e2d549ffcd8507c126c18047c64f36670a0d6d86d9469bceb47245c0e3" => :high_sierra
     sha256 "dd7617947a4e85063cc5d41fc82eabdd54a3d456475533ad65431d1f2fd6338a" => :sierra
     sha256 "f17025b7856d7e9fc17d58361a8686bd6d27b4182e28632b0e9d797d0fcf22f9" => :el_capitan

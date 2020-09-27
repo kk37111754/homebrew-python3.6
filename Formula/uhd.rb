@@ -8,7 +8,7 @@ class Uhd < Formula
 
   bottle do
     rebuild 1
-    sha256 "91caa706bb5a1b05e28b65c76dce4510d55e41dcc401a56f91821729e911ea8a" => :mojave
+#    sha256 "91caa706bb5a1b05e28b65c76dce4510d55e41dcc401a56f91821729e911ea8a" => :mojave
     sha256 "2a8b15cc1c65ec951f7da9afea0eb716b126d40681cc490ace03c8ab2b25add2" => :high_sierra
     sha256 "cd1b2a157c4f822be838eae6d047308f7907abac9b72726f9b2ef0dfce06483e" => :sierra
     sha256 "2593c3ebd3901a0d146286b20f8c43207e8a309beca5f7a926af9032ac17ea51" => :el_capitan

@@ -5,7 +5,7 @@ class Baobab < Formula
   sha256 "5e4dd06f241eb32f00850efa1a4541cee088de480be2b52d788143187410a74f"
 
   bottle do
-    sha256 "b63fcc8dd3de87dc5ccb37b51a60038eb481f457ef93af3418600b0cbcf600f6" => :mojave
+#    sha256 "b63fcc8dd3de87dc5ccb37b51a60038eb481f457ef93af3418600b0cbcf600f6" => :mojave
     sha256 "11f6b1bc93bc07d3d029437fca774875c253d0979b689e0e3515da2cd7f62faa" => :high_sierra
     sha256 "2ae6e39ef772e7a43fd04a58c65576b2fd828398f05138656ff48475a9f92626" => :sierra
     sha256 "fac932ecf76732c1284ab91d1da849a514e5b818a684de9b2d4b792cfc6d9a37" => :el_capitan

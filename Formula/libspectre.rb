@@ -7,7 +7,7 @@ class Libspectre < Formula
 
   bottle do
     cellar :any
-    sha256 "f6dd2d46d2a096a398262555563ac774b369401cedbb99a8e3f2cb7222e57bff" => :mojave
+#    sha256 "f6dd2d46d2a096a398262555563ac774b369401cedbb99a8e3f2cb7222e57bff" => :mojave
     sha256 "cfbe54d38fb4d49ce132b370fc84760e38b32587e8707a701c6dda63954c21dd" => :high_sierra
     sha256 "b4365eb95f7392f34dffbee073f009651756ccd9693a7d3d8ccee274c669a607" => :sierra
     sha256 "18445d5a2699d790134fc04c3ae70a8a6dcc9ac816ddd2f50210c7e337e618b6" => :el_capitan

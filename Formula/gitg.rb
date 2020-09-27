@@ -7,7 +7,7 @@ class Gitg < Formula
 
   bottle do
     rebuild 1
-    sha256 "d564572062da36ddb977eb799aa4394923622583d796c7198d020fbc4eee9558" => :mojave
+#    sha256 "d564572062da36ddb977eb799aa4394923622583d796c7198d020fbc4eee9558" => :mojave
     sha256 "49afdc45be635182e05346030c603b71690cbae0f845a577af2386c72d7bf2b8" => :high_sierra
     sha256 "c0510a1824cea49680dd1384713573e5894bff20fb8f8795e7fb1a0309a352e8" => :sierra
     sha256 "e3b511e5c3a4892e27ca0f777be10a7bfbcfdb25dd98a976217f0d1e2fa40607" => :el_capitan

@@ -7,7 +7,7 @@ class Ps2eps < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "62472599f3fcc54199d9ce91a531c8f4b214f203c3ffca3e11c9bdc695a13f67" => :mojave
+#    sha256 "62472599f3fcc54199d9ce91a531c8f4b214f203c3ffca3e11c9bdc695a13f67" => :mojave
     sha256 "d4d32e9dc8797d307a015aa1212b551238f540be6fc14f5c08c97a34ab37607f" => :high_sierra
     sha256 "33db202a803be71441bf48c5588262ed4cf7d3cb41121f91d881e1a304dac6df" => :sierra
     sha256 "c4196890ab40c69d270da676c9039ae80b58c9241fb3d11211903c126a42443e" => :el_capitan

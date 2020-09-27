@@ -10,7 +10,7 @@ class Qt < Formula
   head "https://code.qt.io/qt/qt5.git", :branch => "5.11", :shallow => false
 
   bottle do
-    sha256 "8c77b5762267b127cc31346ac4da805bbfd59e0180d90e1e8b77fb463e929d60" => :mojave
+#    sha256 "8c77b5762267b127cc31346ac4da805bbfd59e0180d90e1e8b77fb463e929d60" => :mojave
     sha256 "096d8894b25b0fdec9b77150704491993872a7848397a04870627534fb95c9e3" => :high_sierra
     sha256 "0464be51d0eb0a45de4a1d1c6200e1d9768eec5e9737050755497a4f4de66a08" => :sierra
     sha256 "22e9abc0b47541bb03b2da7f6a19c5d7640ea2314322564551adc3d22305806e" => :el_capitan

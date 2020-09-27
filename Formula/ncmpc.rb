@@ -7,7 +7,7 @@ class Ncmpc < Formula
 
   bottle do
     rebuild 1
-    sha256 "91d0a96cb5759db8de8d2fccce6be795cc671937adea732424376c76ff9ddd3b" => :mojave
+#    sha256 "91d0a96cb5759db8de8d2fccce6be795cc671937adea732424376c76ff9ddd3b" => :mojave
     sha256 "74568bc0dcd4f4ad0408328ae49fb85ae3e93efcbefb649d43736e72f8c27a5e" => :high_sierra
     sha256 "0f155e4eaba3842210c76adeda3250c61f6819bfe108bfee429819c5c579b661" => :sierra
     sha256 "45b4d4d41251246e32f9ceea92faf205f8059fac4c37fd69f7da2b72fd8e8bcc" => :el_capitan

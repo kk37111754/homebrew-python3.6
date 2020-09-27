@@ -7,7 +7,7 @@ class St < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "8c8e5c11bd061f1a90ba17ebc19a285b4cf1494c5790ea6d7c046035ddc65956" => :mojave
+#    sha256 "8c8e5c11bd061f1a90ba17ebc19a285b4cf1494c5790ea6d7c046035ddc65956" => :mojave
     sha256 "3de383c349b1db5c6bd1d6a85f0c3637615430c55a4b2cc0f7e19208735ef221" => :high_sierra
     sha256 "cc4150103a1c9c5268355d937664401a04c2fa1ad478aa541ef7535004a75210" => :sierra
     sha256 "2df47c1388ef527487527c1173508ebdaf217b0f03c70a6e4567d037a912e214" => :el_capitan

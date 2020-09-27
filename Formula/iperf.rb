@@ -6,7 +6,7 @@ class Iperf < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "01de4f2fb033d82ea4b8871d9a4ac10ab9e750b731c7562404cd351cf36ae4f1" => :mojave
+#    sha256 "01de4f2fb033d82ea4b8871d9a4ac10ab9e750b731c7562404cd351cf36ae4f1" => :mojave
     sha256 "7a29fc4ba28b6045cb312df0970bac0186b13fc981eb36a9d1d3c83d1a3a8a51" => :high_sierra
     sha256 "0a2e1d58baabe619ee38814611f8ed51d58b56340bcdb724b4d1d5181377fbef" => :sierra
     sha256 "32d35b8a77f0b9bf8aba9a7e7c0d0629faab867836ef5496c937284498fa6b4a" => :el_capitan

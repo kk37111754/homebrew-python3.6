@@ -5,7 +5,7 @@ class Chapel < Formula
   sha256 "68471e1f398b074edcc28cae0be26a481078adc3edea4df663f01c6bd3b6ae0d"
 
   bottle do
-    sha256 "ec5a061a5bbb87ab2ae8914575754c21ff517438c87f34246f5407b03c05277b" => :mojave
+#    sha256 "ec5a061a5bbb87ab2ae8914575754c21ff517438c87f34246f5407b03c05277b" => :mojave
     sha256 "a661717fffa4d53c89956e241fd830956a0b34c9ad6869a9fc0698918d0c1718" => :high_sierra
     sha256 "b884c781ec6b7feef055421be8518e43ce917cb0aada966a2a6e993df4eec162" => :sierra
     sha256 "703fd9c9a452a7d71bfe71d2c3ce5978ff1a95260e412857172ffbd91e5d829e" => :el_capitan

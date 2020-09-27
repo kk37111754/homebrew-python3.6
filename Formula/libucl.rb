@@ -7,7 +7,7 @@ class Libucl < Formula
   bottle do
     cellar :any
     rebuild 2
-    sha256 "5f845b8255109ef447e502ae4e409272c0a20c77b46f53ef717db33c9fb02a8d" => :mojave
+#    sha256 "5f845b8255109ef447e502ae4e409272c0a20c77b46f53ef717db33c9fb02a8d" => :mojave
     sha256 "77547a51a2e038ab2f26123fb39ecd12e1ba248aa857dc01c75892554c404330" => :high_sierra
     sha256 "20f8f84cdefc801f89531a97ef9d6964f84199040e9c7affda48848171c6f096" => :sierra
     sha256 "ca86c64fe729bae95050208ef904752473da24592e9221c774e65206df3d8567" => :el_capitan

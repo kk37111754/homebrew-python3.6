@@ -17,7 +17,7 @@ class Rust < Formula
     cellar :any
     root_url "https://github.com/autobrew/bottles/releases/download/rust-1.42.0"
     sha256 "0841e6ba7120d37e8191e3f84f11b362a1c43a471cd4002bf201bfbfe1b739a3" => :catalina
-    sha256 "064407ccb9e4f033c998db2637c6ede24b7696d660cbefb7ad1e8e903a880960" => :mojave
+#    sha256 "064407ccb9e4f033c998db2637c6ede24b7696d660cbefb7ad1e8e903a880960" => :mojave
     sha256 "771825953fe2fb4a96a7732d70fefec21847da8d38ca9c1dab29c2bb04376486" => :high_sierra
     sha256 "f63037e625e79073ea6169bb551d3698eef97e75627e81033a3bff737ae6b246" => :el_capitan
   end

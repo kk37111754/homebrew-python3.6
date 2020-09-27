@@ -5,7 +5,7 @@ class Mdcat < Formula
   sha256 "c946a6115e903675f8ebc786c7a628d982f2c490c68f9eb7d9986726477465d1"
 
   bottle do
-    sha256 "d92f8e0c406d0d47d007a1833c01cb67c9e85dd1d01cd66e8c8c5bb68f210ce5" => :mojave
+#    sha256 "d92f8e0c406d0d47d007a1833c01cb67c9e85dd1d01cd66e8c8c5bb68f210ce5" => :mojave
     sha256 "1e3e24803ce9ca7e40e1792660bfee461b9d3ebbe2db563e44c234c6829545ee" => :high_sierra
     sha256 "540c23e2f8a341adeae5dc8965ce36861ab870316b69ea6eb5eb41268df37ac6" => :sierra
     sha256 "db8fb3a05f299557b0fbe95330ed2f04f64dd6065c8b8a13d7723555ddf30021" => :el_capitan

@@ -5,7 +5,7 @@ class Vte3 < Formula
   sha256 "ae09697006300d61a8de0c7ecebe0b36959179e5329a124f5ba2f45684dfa523"
 
   bottle do
-    sha256 "3249c3eeed411baee1fcc1f31ce9b58f34638d31c2fc6a5a2cf37a69d764661a" => :mojave
+#    sha256 "3249c3eeed411baee1fcc1f31ce9b58f34638d31c2fc6a5a2cf37a69d764661a" => :mojave
     sha256 "2da621f34087496d386ccd870a9b25a20ab22462a39221991667bcbc03bc3a8a" => :high_sierra
     sha256 "634251c2ae5f92a4862dc8f6a3adf8252b5a4009fedf4f1e714dcc31a793e839" => :sierra
     sha256 "2049ee65cdae10b8b1bd75985323bf1aad0ffb01d85bdb0db971a068c1d7c190" => :el_capitan

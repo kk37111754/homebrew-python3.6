@@ -7,7 +7,7 @@ class Luaradio < Formula
 
   bottle do
     cellar :any
-    sha256 "125167fb508f82ae680af4c3d4c574669722631ca19ad3b9b8b52f8563f29688" => :mojave
+#    sha256 "125167fb508f82ae680af4c3d4c574669722631ca19ad3b9b8b52f8563f29688" => :mojave
     sha256 "cf03f46947a0387cc0735a624642d90582fdb96fb843254394ab52eb1b2921ec" => :high_sierra
     sha256 "3e81ae80baacae0a53a8da520c8320513f74f6fb1552f0b3b05fa14779ac552d" => :sierra
     sha256 "8d3e797c92ceeaf64eb10c51eaef17ea56631ee4272a2e20b7bcbc4fdfb134ad" => :el_capitan

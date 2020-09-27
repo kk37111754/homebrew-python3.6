@@ -6,7 +6,7 @@ class Bloaty < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "e0eaa91cfad61274a41ffb94f335cf61ad8217e9d47eff8bb77a390d7bcdb165" => :mojave
+#    sha256 "e0eaa91cfad61274a41ffb94f335cf61ad8217e9d47eff8bb77a390d7bcdb165" => :mojave
     sha256 "1c06ab5eb36a968ba9755028760f1dfc4958273325e5d243d9562cb571912fa6" => :high_sierra
     sha256 "aa8aa6c63e5cd626ce78146912c8abf79d2ed110d3ed0501482a88f421dce4b5" => :sierra
     sha256 "2657c5809a086a8bba8d2ed81ca56f5640a5eab69723aa3ef342160c64c84cbd" => :el_capitan

@@ -7,7 +7,7 @@ class Pgbadger < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "3d37480b014b1ab14c23fc32bbc5f9905f698278a7f992bb3936f407e2a376c1" => :mojave
+#    sha256 "3d37480b014b1ab14c23fc32bbc5f9905f698278a7f992bb3936f407e2a376c1" => :mojave
     sha256 "84d415f357636d23074da0d3d07f44a16408657d6a948dd5028cb2ef6d7c279f" => :high_sierra
     sha256 "84d415f357636d23074da0d3d07f44a16408657d6a948dd5028cb2ef6d7c279f" => :sierra
     sha256 "84d415f357636d23074da0d3d07f44a16408657d6a948dd5028cb2ef6d7c279f" => :el_capitan

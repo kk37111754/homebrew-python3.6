@@ -7,7 +7,7 @@ class Shogun < Formula
 
   bottle do
     rebuild 1
-    sha256 "63a2ac799dc302da4fa23cf042c7d7195ef226533feba6b83b09b8ecebe06371" => :mojave
+#    sha256 "63a2ac799dc302da4fa23cf042c7d7195ef226533feba6b83b09b8ecebe06371" => :mojave
     sha256 "fed5e4edc265b1b7dbee4000c7972bbb19b428a9939ebfba14b8404c8f27ac61" => :high_sierra
     sha256 "cc8ae55e009ed40250df44fb1a9f3e7297104a77f3680c485c30c3708bb4e2df" => :sierra
     sha256 "f6783d7ee05413b27b300470fb866731bd1a34398e99598a4d4d7b1b6e61fa6e" => :el_capitan

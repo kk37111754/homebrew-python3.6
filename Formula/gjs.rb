@@ -5,7 +5,7 @@ class Gjs < Formula
   sha256 "e22c63f4dbf243d7a5a6660f6443ca3e5768695a48fc9fdf078bce7cf7aa657d"
 
   bottle do
-    sha256 "daf905d8a4f887615ad7c94bbcd2d1fb20e4ebe972b4723a11c35df209b3786f" => :mojave
+#    sha256 "daf905d8a4f887615ad7c94bbcd2d1fb20e4ebe972b4723a11c35df209b3786f" => :mojave
     sha256 "c489021983a56fe446820a8b8cf60c512f2403b832adf2dc128af3bc77dfd143" => :high_sierra
     sha256 "f4f93c38137fde79938a5a751ff259752a2464a5c61ff1deb1d5e5b8a8be906c" => :sierra
     sha256 "a61878736e0d935d053ac6eea9f92cf32a1e172c6ac5fd24bbfec4c768fd8097" => :el_capitan

@@ -7,7 +7,7 @@ class Libgdata < Formula
 
   bottle do
     rebuild 1
-    sha256 "b9a231d986b30cbc220d874b4447ded9425fecb9efd43247fc427a772273bae1" => :mojave
+#    sha256 "b9a231d986b30cbc220d874b4447ded9425fecb9efd43247fc427a772273bae1" => :mojave
     sha256 "e292ca01fe35e383276337177173f0def97c0e0fa18210f8b56db148f9eeb80a" => :high_sierra
     sha256 "701b8a026fcaaa40985ea56bd63de5c83a1e6ccf181d308e962a08ee53beab97" => :sierra
     sha256 "a74b12eca5e8cd51967c1dac09799e394da01d30bf421805da93c1107d5e96dd" => :el_capitan

@@ -8,7 +8,7 @@ class Diceware < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f17a7034c6bd69b188c16dc4ad98e493dcaba45372831631fdee1e6443b244cc" => :mojave
+#    sha256 "f17a7034c6bd69b188c16dc4ad98e493dcaba45372831631fdee1e6443b244cc" => :mojave
     sha256 "804dedba249ec07880d46de1c438ab1e030dcabbd3c3a856376421c365fc2355" => :high_sierra
     sha256 "d6a2b39814cd36908c198fff005f449c5acda91b7b4416e8e670348bee83aaf1" => :sierra
     sha256 "5f0aeaaeecf438f4d61a8cdf4420198f167d49bf962dbde55e2bd8abc305dd63" => :el_capitan

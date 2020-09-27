@@ -7,7 +7,7 @@ class Pincaster < Formula
 
   bottle do
     rebuild 1
-    sha256 "e1cdc55085e31ff199e4beb9726ae30100f3e729d116d8b10d730ae6ebfb07d2" => :mojave
+#    sha256 "e1cdc55085e31ff199e4beb9726ae30100f3e729d116d8b10d730ae6ebfb07d2" => :mojave
     sha256 "434c3551a2707f2197913a767c90ddb00ff5d542408379aeac623254d0594332" => :high_sierra
     sha256 "77649ce6e3ab74ca1a58f15e7764ee467fc8de69a2b56f2fa03d1c5f0324e93d" => :sierra
     sha256 "217521a03c99cdf721cefb339c4a1d5fb61b7838116b49bded875dbe2cfceb65" => :el_capitan

@@ -6,7 +6,7 @@ class Nss < Formula
 
   bottle do
     cellar :any
-    sha256 "9c715afc2c5bae60da319d9412c4995f4990654fc74b2aaff18b1314b0f63811" => :mojave
+#    sha256 "9c715afc2c5bae60da319d9412c4995f4990654fc74b2aaff18b1314b0f63811" => :mojave
     sha256 "b6afbf581bb3bde21be4bc9ade701bee4cd4e35caaba7bf070c3b2d2776e43a4" => :high_sierra
     sha256 "351bf5af7c6bdbec0ae3c6f37b7dc42f009b67501be0d2189724b636defc7119" => :sierra
     sha256 "fdb200e672e14a588a50c0c88c50a4e4807b99b342929f4e71462b5150597386" => :el_capitan

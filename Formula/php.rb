@@ -5,7 +5,7 @@ class Php < Formula
   sha256 "01c2154a3a8e3c0818acbdbc1a956832c828a0380ce6d1d14fea495ea21804f0"
 
   bottle do
-    sha256 "f6267ba38a514ce87e979942a381e4a453df2a4c0ab543911e201c72eb5cb4c4" => :mojave
+#    sha256 "f6267ba38a514ce87e979942a381e4a453df2a4c0ab543911e201c72eb5cb4c4" => :mojave
     sha256 "3fc056f4c970bf2590fa26552d74dec8e67393cdf831704d66bb8ee1510cbc6b" => :high_sierra
     sha256 "ccf3c9f1d496d7f1d60a22d6b2ac95f6a1263726bd07eb5a1be070d15f85e518" => :sierra
     sha256 "97df44572785772091aaaedd038a10bc481ed7a04c341653f0ecb930b5eb8035" => :el_capitan

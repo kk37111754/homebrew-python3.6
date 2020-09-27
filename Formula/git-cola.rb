@@ -9,7 +9,7 @@ class GitCola < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "434cfe046abbea9ebb1456c52c9a40be912d14d6fa5a267b4ea4a404d4b17709" => :mojave
+#    sha256 "434cfe046abbea9ebb1456c52c9a40be912d14d6fa5a267b4ea4a404d4b17709" => :mojave
     sha256 "4283d675b4f870c944c088575fffde74986173042acffb9301d7107b3ffa6bcf" => :high_sierra
     sha256 "4283d675b4f870c944c088575fffde74986173042acffb9301d7107b3ffa6bcf" => :sierra
     sha256 "4283d675b4f870c944c088575fffde74986173042acffb9301d7107b3ffa6bcf" => :el_capitan

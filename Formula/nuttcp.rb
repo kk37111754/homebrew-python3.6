@@ -7,7 +7,7 @@ class Nuttcp < Formula
   bottle do
     cellar :any_skip_relocation
     rebuild 1
-    sha256 "82951677c224a70e463033f266791122d7419dd5308bef61da5474738151497b" => :mojave
+#    sha256 "82951677c224a70e463033f266791122d7419dd5308bef61da5474738151497b" => :mojave
     sha256 "bb494c46c81a914bb8eb66ad4476c2503e0345fc8f9dcf82c5cd2576fe005869" => :high_sierra
     sha256 "9f4ca632e04e072eea5d17a54cd42e22d63ef7902e452d1133d42fea0ca2f829" => :sierra
     sha256 "c38cac9cdf461d9f44a34dc1c7db83909a38faee07c1f5c43af3a4f816527493" => :el_capitan

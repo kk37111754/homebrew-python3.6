@@ -5,7 +5,7 @@ class GstEditingServices < Formula
   sha256 "bdb6be75acfaaac3528d30ad47e77eb443d6c55ddabd597c154cd9e88c9a37de"
 
   bottle do
-    sha256 "e432b536f6359bd218b492fe79f938f4ff8ae65475c2afe177c510f3d5b1e004" => :mojave
+#    sha256 "e432b536f6359bd218b492fe79f938f4ff8ae65475c2afe177c510f3d5b1e004" => :mojave
     sha256 "8bcb855c81d47601e528e1262698ae71047f3b632819e8f7619b2982c233d414" => :high_sierra
     sha256 "3c9491a57f8c409ac35b2b4e389d22350aa056ca8a92b31a029361222014506d" => :sierra
     sha256 "9eeb2a72c99677b9f9725b214929cef4542c78eb2cb3cf05e37b42abfa5bd318" => :el_capitan

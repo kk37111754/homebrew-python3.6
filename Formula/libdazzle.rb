@@ -5,7 +5,7 @@ class Libdazzle < Formula
   sha256 "f45b7dd27ed798352196813c8e87d386007a939df7aca447f5a5666afc03be43"
 
   bottle do
-    sha256 "d91ca2631afee4bc489d1e0dd77e6efde1338d6ae480ae0084fcb09554afc850" => :mojave
+#    sha256 "d91ca2631afee4bc489d1e0dd77e6efde1338d6ae480ae0084fcb09554afc850" => :mojave
     sha256 "e40706aef119e0984fb63cbd4084e14c6742af14fc1664a33ad53fad1d2a910d" => :high_sierra
     sha256 "37ea5bf824e7339c7abb8585a8750709bb0256c4e1fc9162650111345a1c0a81" => :sierra
     sha256 "05a9bb8cc7b3b0e283ee27035d9f803453c01b6e53cbf7ee3bdb30b4484e92a3" => :el_capitan

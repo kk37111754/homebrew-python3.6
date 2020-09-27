@@ -5,7 +5,7 @@ class Knot < Formula
   sha256 "cb70b2ee1c7ecbaad8774a1e0c449a68c6a6f7c9d60595524f003201d6e38431"
 
   bottle do
-    sha256 "135a46329ede38410c4ed016f553db2d839174912758a2c6befa7d4350bbb5a1" => :mojave
+#    sha256 "135a46329ede38410c4ed016f553db2d839174912758a2c6befa7d4350bbb5a1" => :mojave
     sha256 "aee994511ac0cd229f9967addc33de1506f8125aedf22a9545b101fca2074df0" => :high_sierra
     sha256 "bb53f92b3b1ed5c65f0bfe0339a4f4003776efb6b2c34bc7a67615dc06402961" => :sierra
     sha256 "1aed5ce5f2847b6a8b22e086879142e5c19dd4bd68428dbbcc9a14a7c9653ede" => :el_capitan

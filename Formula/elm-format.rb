@@ -12,7 +12,7 @@ class ElmFormat < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "7b0169fc746c7f5cb58c42398ed2d27293bd0fbe7e03c79a20772e40e2b87b7c" => :mojave
+#    sha256 "7b0169fc746c7f5cb58c42398ed2d27293bd0fbe7e03c79a20772e40e2b87b7c" => :mojave
     sha256 "a1047123c27bd64f9ee8a9105abfcf2e474cb76cee9c33c815ffb148f8864968" => :high_sierra
     sha256 "5af4a51247a7ed87cb10e5a68d42fdd29441ea943cb97aefde67ba73e562718e" => :sierra
     sha256 "81ceb798aab9192629dfe1b98b91dfcaec272db1c83eba9c662f90f8e776d0fa" => :el_capitan
